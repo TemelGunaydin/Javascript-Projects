@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <title>Quiz</title>
+  </head>
+  <body>
+    <!-- Top Section -->
+    <div class="intro py-3 bg-white text-center">
+      <div class="container">
+        <h2 class="text-primary my-3 display-3">Quiz APP</h2>
+      </div>
+    </div>
+
+    <!-- Score Section -->
+    <div class="d-none text-center bg-light result py-4">
+      <div class="container lead">
+        <p>
+          Your score is
+          <span name="spans" class="text-primary display-4 p-3">0%</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- Quiz Section -->
+    <div class="quiz py-4 bg-primary">
+      <div class="container">
+        <h2 class="my-5 text-white">On with the questions...</h2>
+
+        <!-- Form Section Includes all questions and answers -->
+        <form class="quiz-form text-light">
+          <!-- First Question -->
+          <div class="my-5">
+            <p class="lead fonts-weight-normal">1. What is Node.js?</p>
+
+            <!-- answer 1 -->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q1" value="A" checked />
+              <label class="form-check-label"> Show Them a map </label>
+            </div>
+            <!-- answer 2 -->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q1" value="B" />
+              <label class="form-check-label"
+                >Buraya başka bir cevap yazmalıyız</label
+              >
+            </div>
+          </div>
+          <!-- Second Question -->
+          <div class="my-5">
+            <p class="lead fonts-weight-normal">2. Explain async keyword?</p>
+            <!-- answer 1 -->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q2" value="A" checked />
+              <label class="form-check-label"> Show Them a map </label>
+            </div>
+            <!-- answer 2 -->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q2" value="B" />
+              <label class="form-check-label"
+                >Buraya başka bir cevap yazmalıyız</label
+              >
+            </div>
+          </div>
+
+          <!-- Third Question -->
+          <div class="my-5">
+            <p class="lead fonts-weight-normal">3. Explain async keyword?</p>
+            <!-- answer 1 -->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q3" value="A" checked />
+              <label class="form-check-label"> Show Them a map </label>
+            </div>
+            <!-- answer 2 -->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q3" value="B" />
+              <label class="form-check-label"
+                >Buraya başka bir cevap yazmalıyız</label
+              >
+            </div>
+          </div>
+
+          <!-- Fourth Question -->
+          <div class="my-5">
+            <p class="lead fonts-weight-normal">4. Explain async keyword?</p>
+            <!-- answer 1 -->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q4" value="A" checked />
+              <label class="form-check-label"> Show Them a map </label>
+            </div>
+            <!-- answer 2 -->
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q4" value="B" />
+              <label class="form-check-label"
+                >Buraya başka bir cevap yazmalıyız</label
+              >
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="my-2">
+            <input type="submit" class="btn btn-light" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
