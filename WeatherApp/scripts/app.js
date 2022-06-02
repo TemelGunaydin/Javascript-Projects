@@ -59,4 +59,17 @@ form.addEventListener("submit", (event) => {
     .catch((err) => {
       console.log(err);
     });
+
+  localStorage.setItem("city", userInput);
 });
+
+const cityValue = localStorage.getItem("city");
+if (cityValue) {
+  updateCity(cityValue)
+    .then((data) => {
+      updateUI(data);
+    })
+    .catch((err) => {
+      console.log("No city found in local storage");
+    });
+}
